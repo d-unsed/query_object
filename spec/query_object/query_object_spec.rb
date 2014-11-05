@@ -20,4 +20,8 @@ describe QueryObject::QueryObject do
       end
     end
   end
+
+  describe '#relation' do
+    its(:relation) { is_expected.to eq(query) }
+  end
 end
