@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = QueryObject::VERSION
   spec.authors       = ["Dmitry Gritsay"]
   spec.email         = ["unseductable@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Query objects for ActiveRecord}
+  spec.description   = %q{Query objects for ActiveRecord}
   spec.homepage      = ""
   spec.license       = "MIT"
 
