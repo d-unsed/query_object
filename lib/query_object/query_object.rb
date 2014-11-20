@@ -9,5 +9,11 @@ module QueryObject
     def relation
       query.call
     end
+
+    def merge_with(query_object)
+      merged_query = relation.merge(query_object.query)
+
+      self.class.new { merged_query }
+    end
   end
 end

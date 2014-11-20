@@ -1,8 +1,7 @@
 require 'spec_helper'
 
 describe QueryObject::QueryObject do
-  let(:query)            { double() }
-
+  let(:query)            { spy('query') }
   subject(:query_object) { described_class.new(query) }
 
   describe '#initialize' do
@@ -23,5 +22,17 @@ describe QueryObject::QueryObject do
 
   describe '#relation' do
     its(:relation) { is_expected.to eq(query) }
+  end
+
+  describe '#merge_with' do
+    let(:another_query)        { double('another_query') }
+    let(:another_query_object) { double('another_object', query: another_query) }
+    subject!                   { query_object.merge_with(another_query_object) }
+
+    it { is_expected.to be_instance_of(described_class) }
+
+    it 'merges both ActiveRecord relations' do
+      expect(query).to have_received(:merge).with(another_query)
+    end
   end
 end
