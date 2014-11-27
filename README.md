@@ -1,5 +1,9 @@
 # QueryObject
 
+[![Gem Version](https://badge.fury.io/rb/query_object.svg)](http://badge.fury.io/rb/query_object)
+[![Build Status](https://travis-ci.org/d-unseductable/query_object.svg?branch=master)](https://travis-ci.org/d-unseductable/query_object)
+[![Dependency Status](https://gemnasium.com/d-unseductable/query_object.svg)](https://gemnasium.com/d-unseductable/query_object)
+[![Coverage Status](https://img.shields.io/coveralls/d-unseductable/query_object.svg)](https://coveralls.io/r/d-unseductable/query_object?branch=master)
 
 A simple :green_heart: super-lightweight :green_heart: implementation of Query Objects for ActiveRecord.
 Query objects allow you to extract complex ActiveRecord queries out of your models. Each object can represent one or more business rules.
