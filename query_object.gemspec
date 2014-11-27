@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["unseductable@gmail.com"]
   spec.summary       = %q{Query objects for ActiveRecord}
   spec.description   = %q{Query objects for ActiveRecord}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/d-unseductable/query_object"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
